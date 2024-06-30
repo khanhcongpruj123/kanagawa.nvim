@@ -275,13 +275,13 @@ function M.setup(opts)
 	end
 
 	-- Add to and/or override palette_colors
-	local updated_palette_colors = palette
+	local updated_palette_colors = palette_paper
 
-	if theme == "paper" then
-		updated_palette_colors = vim.tbl_extend("force", palette_paper, override_colors.palette or {})
-	else
-		updated_palette_colors = vim.tbl_extend("force", palette, override_colors.palette or {})
-	end
+	-- if theme == "paper" then
+	-- 	updated_palette_colors = vim.tbl_extend("force", palette_paper, override_colors.palette or {})
+	-- else
+	-- 	updated_palette_colors = vim.tbl_extend("force", palette, override_colors.palette or {})
+	-- end
 
 	-- Generate the theme according to the updated palette colors
 	local theme_colors = require("kanagawa.themes")[theme](updated_palette_colors)
