@@ -24,7 +24,7 @@
 Download with your favorite package manager.
 
 ```lua
-use "rebelot/kanagawa.nvim"
+use "khanhcongpruj123/kanagawa.nvim"
 ```
 
 ## Requirements
